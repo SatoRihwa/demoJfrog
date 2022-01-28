@@ -33,7 +33,7 @@
     <repository>
         <id>central</id>
         <name>a0fhdjbok6nvl-artifactory-primary-0-releases</name>
-        <url>https://rihwa.jfrog.io/artifactory/maven_repo-libs-snapshot-local</url>
+        <url>https://rihwa.jfrog.io/artifactory/maven_repo-libs-snapshot-releases</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
