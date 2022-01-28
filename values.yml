@@ -1,4 +1,4 @@
 gitProvider: testGitHub
 artifactory: testArtifactory
-repoPath: SatoRihwa/Demo
+repoPath: SatoRihwa/demoJfrog
 deployerRepo: maven_repo-libs-snapshot-local
