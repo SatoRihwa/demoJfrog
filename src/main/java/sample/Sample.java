@@ -7,41 +7,41 @@ import org.apache.logging.log4j.Logger;
 
 public class Sample {
 	
-	/** ŒvZ’l•Û‘¶—p */
+	/** ï¿½vï¿½Zï¿½lï¿½Û‘ï¿½ï¿½p */
 	private int num = 0;
 	
 	public Sample(int i) {
 		final Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
-		logger.debug("Log4jg—p");
+		logger.debug("Log4jï¿½gï¿½p");
 		setNum(i);
 	}
 	
 	/**
-	 * ƒeƒXƒg—pƒƒ\ƒbƒh.
-	 * @return ƒ`ƒFƒbƒNŒ‹‰Ê
+	 * ï¿½eï¿½Xï¿½gï¿½pï¿½ï¿½ï¿½\ï¿½bï¿½h.
+	 * @return ï¿½`ï¿½Fï¿½bï¿½Nï¿½ï¿½ï¿½ï¿½
 	 */
 	public String test() {
 		return checkNum();
 	}
 	
 	/**
-	 * ƒ`ƒFƒbƒNˆ—
-	 * @return ƒ`ƒFƒbƒNŒ‹‰Ê
+	 * ï¿½`ï¿½Fï¿½bï¿½Nï¿½ï¿½ï¿½ï¿½
+	 * @return ï¿½`ï¿½Fï¿½bï¿½Nï¿½ï¿½ï¿½ï¿½
 	 */
 	private String checkNum() {
 		if(getNum() < 0) {
-			return "ƒ}ƒCƒiƒX";
+			return "ï¿½}ï¿½Cï¿½iï¿½X";
 		}else if(0 == getNum()){
-			return "ƒ[ƒ";
+			return "ï¿½[ï¿½ï¿½";
 		}else if(getNum() < 10) {
-			return "‚PŒ…";
+			return "ï¿½Pï¿½ï¿½";
 		}else {
-			return "‚QŒ…ˆÈã";
+			return "ï¿½Qï¿½ï¿½ï¿½Èï¿½";
 		}
 	}
 
 	/**
-	 * ’læ“¾
+	 * ï¿½lï¿½æ“¾
 	 * @return num
 	 */
 	public int getNum() {
@@ -49,10 +49,14 @@ public class Sample {
 	}
 
 	/**
-	 * ’lİ’è
-	 * @param num ’l
+	 * ï¿½lï¿½İ’ï¿½
+	 * @param num ï¿½l
 	 */
 	public void setNum(int num) {
 		this.num = num;
+	}
+	
+	public void demo() {
+		System.out.println();
 	}
 }
