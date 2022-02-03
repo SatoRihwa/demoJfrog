@@ -32,7 +32,7 @@ public class Sample {
 		if(getNum() < 0) {
 			return "�}�C�i�X";
 		}else if(0 == getNum()){
-			return "�[��";
+			return "ゼロです";
 		}else if(getNum() < 10) {
 			return "�P��";
 		}else {
