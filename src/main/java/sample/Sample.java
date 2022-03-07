@@ -7,41 +7,43 @@ import org.apache.logging.log4j.Logger;
 
 public class Sample {
 	
-	/** �v�Z�l�ۑ��p */
+	/** チェック用変数 */
 	private int num = 0;
 	
 	public Sample(int i) {
 		final Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
-		logger.debug("Log4j�g�p");
+		logger.debug("Log4使用中");
 		setNum(i);
 	}
 	
 	/**
-	 * �e�X�g�p���\�b�h.
-	 * @return �`�F�b�N����
+	 * 値テスト.
+	 * @return チェック結果
 	 */
 	public String test() {
 		return checkNum();
 	}
 	
 	/**
-	 * �`�F�b�N����
-	 * @return �`�F�b�N����
+	 * 値からチェック結果を文字列で返す.
+	 * @return チェック結果文字列
 	 */
 	private String checkNum() {
 		if(getNum() < 0) {
-			return "�}�C�i�X";
+			return "マイナス";
 		}else if(0 == getNum()){
 			return "ゼロです";
 		}else if(getNum() < 10) {
-			return "�P��";
+			return "10以下です";
+		} else if(getNum() == 100) {
+			return "100です";
 		}else {
-			return "�Q���ȏ�";
+			return "10以上です";
 		}
 	}
 
 	/**
-	 * �l�擾
+	 * getter
 	 * @return num
 	 */
 	public int getNum() {
@@ -49,7 +51,7 @@ public class Sample {
 	}
 
 	/**
-	 * �l�ݒ�
+	 * setter
 	 * @param num �l
 	 */
 	public void setNum(int num) {
