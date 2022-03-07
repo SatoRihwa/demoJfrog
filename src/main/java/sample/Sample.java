@@ -12,7 +12,7 @@ public class Sample {
 	
 	public Sample(int i) {
 		final Logger logger = LogManager.getLogger(MethodHandles.lookup().lookupClass());
-		logger.debug("Log4使用中");
+		logger.debug("Log4使用中!");
 		setNum(i);
 	}
 	
