@@ -2,19 +2,19 @@ template: true   # required for local templates
 valuesFilePath: ./values.yml
 
 resources:
-  - name: mvn_repo2
+  - name: mvn_repo4
     type: GitRepo
     configuration:
       path: {{ .Values.repoPath }}
       gitProvider: {{ .Values.gitProvider }}
 
-  - name: mvn_build_info2
+  - name: mvn_build_info4
     type: BuildInfo
     configuration:
       sourceArtifactory: {{ .Values.artifactory }}
 
 pipelines:
-  - name: demo_maven2
+  - name: demo_maven4
     steps:
       - name: mvn_build_step
         type: MvnBuild
