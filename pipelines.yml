@@ -22,7 +22,7 @@ pipelines:
           deployerSnapshotRepo: {{ .Values.deployerRepo }}
           deployerReleaseRepo: {{ .Values.deployerRepo }}
           inputResources:
-            - name: mvn_repo2
+            - name: mvn_repo4
           integrations:
             - name: {{ .Values.artifactory }}
 
