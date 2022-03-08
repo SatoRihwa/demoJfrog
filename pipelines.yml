@@ -33,4 +33,4 @@ pipelines:
           inputSteps:
             - name: mvn_build_step
           outputResources:
-            - name: mvn_build_info2
+            - name: mvn_build_info4
